@@ -18,11 +18,11 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 const connection = mysql.createConnection({
-    host: 'a1kod7.h.filess.io',
-    user: 'C237SupermarketApp_articlefun',
-    password: 'b56f4b456c059f7ca274d62f152a4f8277eedba8',
-    database: 'C237SupermarketApp_articlefun',
-    port: 3307
+    host: '1yfliu.h.filess.io',
+    user: 'VaporLibrary_ageeither',
+    password: '1c070e7cfebcc8318f1c37f00fe7cef05f079dd3',
+    database: 'VaporLibrary_ageeither',
+    port: 61002
   });
 
 connection.connect((err) => {
@@ -314,5 +314,5 @@ app.get('/deleteProduct/:id', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3307;
+const PORT = process.env.PORT || 61002;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
